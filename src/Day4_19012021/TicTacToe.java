@@ -1,4 +1,4 @@
-package Day4_19012021_tictactoe;
+package Day4_19012021;
 
 import java.util.Scanner;
 
@@ -25,10 +25,12 @@ public class TicTacToe {
 		boolean empty = false;
 		if(pos < 1 || pos > 9) {
 			System.out.println("Error occurred: The position " + pos + " is not within the range 1 - 9");
-		} else if(pos >= 1 && pos <= 9 && this.board[pos - 1] == ' ') {
-			empty = true;
 		} else {
-			System.out.println("Error occurred: The position " + pos + " already has a symbol " + this.board[pos - 1]);
+			if(pos >= 1 && pos <= 9 && this.board[pos - 1] == ' ') {
+				empty = true;
+			} else {
+				System.out.println("Error occurred: The position " + pos + " already has a symbol " + this.board[pos - 1]);
+			}
 		}
 		return empty;
 	}
@@ -63,29 +65,32 @@ public class TicTacToe {
 		while(turn <= 9) {
 			// print board
 			tttGame.printBoard();
+			System.out.print("It is " + playerSymbol + "'s turn. Enter a position: ");
 			try {
-				System.out.print("It is " + playerSymbol + "'s turn. Enter a position: ");
 				position = sc.nextInt();
-				// check if valid move made
-				if(tttGame.emptyPosition(position)) {
-					tttGame.makeMove(position, playerSymbol);
-					if(turn >= 3 && tttGame.checkWinner(playerSymbol)) { // check winner
-						tttGame.printBoard();
-						System.out.println("Player " + playerSymbol + " is the winner!");
-						break;
-					}
-					turn++;
-					
-					// change next player symbol
-					if(turn % 2 == 0) {
-						playerSymbol = 'O';
-					} else {
-						playerSymbol = 'X';
-					}
-				}
+//				position = Integer.parseInt(sc.nextLine());
 			} catch(Exception e) {
 				System.out.println("Error Occurred: " + e);
 				sc.next(); // prevent infinite loop
+				continue;
+			}
+			
+			// check if valid move made
+			if(tttGame.emptyPosition(position)) {
+				tttGame.makeMove(position, playerSymbol);
+				if(turn >= 3 && tttGame.checkWinner(playerSymbol)) { // check winner
+					tttGame.printBoard();
+					System.out.println("Player " + playerSymbol + " is the winner!");
+					break;
+				}
+				turn++;
+				
+				// change next player symbol
+				if(turn % 2 == 0) {
+					playerSymbol = 'O';
+				} else {
+					playerSymbol = 'X';
+				}
 			}
 		}
 		
