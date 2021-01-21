@@ -8,15 +8,15 @@ Details of the 6-week training are as follows:
 
 |  Week  |    Date     |  Language  |           Details          |
 | :----: | :---------: | ---------- | :------------------------: |
-|   1    |   14012021  |  Java      |                            |
-|   1    |   15012021  |  Java      |                            |
+|   1    |   14012021  |  Java      |  Easy exercises            |
+|   1    |   15012021  |  Java      |  Medium exercises, hashMap |
 |   2    |   18012021  |  Java      |  Printing patterns         |
 |   2    |   19012021  |  Java      |  Classes                   |
 |   2    |   20012021  |  Java      |  Lambda, Multithreading    |
-|   2    |   21012021  |  Java      |                            |
+|   2    |   21012021  |  Java      |  Encapsulation             |
 |   2    |   22012021  |  Java      |                            |
 
 ## Application Stack
 
-1. Eclipse
+1. Eclipse IDE
 2. Java
