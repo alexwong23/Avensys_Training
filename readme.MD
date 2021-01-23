@@ -14,7 +14,8 @@ Details of the 6-week training are as follows:
 |   2    |   19012021  |  Java      |  Classes                   |
 |   2    |   20012021  |  Java      |  Lambda, Multithreading    |
 |   2    |   21012021  |  Java      |  Encapsulation             |
-|   2    |   22012021  |  Java      |                            |
+|   2    |   22012021  |  Java      |  [Web App](https://github.com/alexwong23/Avensys_Web_App) |
+|   3    |   25012021  |  COBOL     |                            |
 
 ## Application Stack
 
