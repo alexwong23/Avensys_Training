@@ -15,7 +15,11 @@ Details of the 6-week training are as follows:
 |   2    |   20012021  |  Java      |  Lambda, Multithreading    |
 |   2    |   21012021  |  Java      |  Encapsulation             |
 |   2    |   22012021  |  Java      |  [Web App Repository](https://github.com/alexwong23/Avensys_Web_App) |
-|   3    |   25012021  |  COBOL     |                            |
+|   3    |   25012021  |  COBOL     |  COBOL Training            |
+|   4    |   01022021  |  JavaEE    |  4 Day BEACON Training     |
+|   4    |   05022021  |  COBOL     |  COBOL Training            |
+|   5    |   08022021  |  COBOL     |  COBOL Training            |
+|   5    |   11022021  |  Java      |  Static methods, inheritance |
 
 ## Application Stack
 
